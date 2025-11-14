@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Coding Platform</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1 class="title">Online Coding Platform</h1>
+
+    <!-- AUTH AREA -->
+    <div class="auth-box">
+        <input type="text" id="username" placeholder="Username" />
+        <input type="password" id="password" placeholder="Password" />
+
+        <button onclick="signup()">Signup</button>
+        <button onclick="login()">Login</button>
+    </div>
+
+    <!-- LANGUAGE SELECTOR -->
+    <div class="row">
+        <label>Select Language:</label>
+        <select id="language">
+            <option value="python">Python</option>
+            <option value="c">C</option>
+            <option value="cpp">C++</option>
+        </select>
+    </div>
+
+    <!-- CODE EDITOR -->
+    <textarea id="code" placeholder="Write your code here..."></textarea>
+
+    <!-- ACTION BUTTONS -->
+    <div class="row">
+        <button onclick="runCode()">Run</button>
+        <button onclick="saveCode()">Save Code</button>
+    </div>
+
+    <!-- OUTPUT SECTION -->
+    <pre id="output"></pre>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
